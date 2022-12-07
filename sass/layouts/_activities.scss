@@ -1,0 +1,36 @@
+.activities {
+  padding-bottom: 94px;
+  &__title {
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    @include centredFlex();
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
