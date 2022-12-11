@@ -1,5 +1,12 @@
 .site-nav {
   margin-right: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    margin-right: 60px;
+  }
+
   &__list {
     display: flex;
     gap: 50px;
@@ -9,6 +16,13 @@
     display: flex;
     gap: 50px;
     margin-left: auto;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
   &__link {
     color: var(--secondary-text-color);
@@ -38,6 +52,9 @@
     }
   }
   &__contacts-link {
+    @media screen and(min-width:768px) {
+      padding: 0%;
+    }
     color: var(--primary-text-color);
 
     @include centredFlex();

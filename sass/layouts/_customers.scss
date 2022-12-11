@@ -1,6 +1,10 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   &__title {
     color: var(--secondary-text-color);
 
@@ -9,16 +13,23 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
   &__item {
     background-color: var(--white-color);
-    width: 170px;
+    width: calc((100% - 30px) / 2);
     height: 92px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+    }
     border: 1px solid #afb1b8;
     border-radius: 4px;
 

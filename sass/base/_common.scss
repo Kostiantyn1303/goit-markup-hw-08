@@ -3,12 +3,16 @@ body {
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
 }
+body.modal-open {
+  overflow: hidden;
+}
 li {
   list-style-type: none;
 }
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 button {
