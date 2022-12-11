@@ -239,6 +239,10 @@ button {
   color: var(--blue-color);
 }
 
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
 .mobile-menu__contacts-item {
   margin-bottom: 32px;
 }
