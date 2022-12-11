@@ -63,7 +63,7 @@
 .mobile-menu__item {
   margin-bottom: 32px;
   &:last-child {
-    margin-bottom: 300px;
+    margin-bottom: 0;
   }
 }
 
@@ -84,7 +84,7 @@
 .mobile-menu__contacts-item {
   margin-bottom: 32px;
   &:last-child {
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 }
 
