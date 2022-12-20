@@ -55,10 +55,8 @@
     transition: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-timing-function);
-    &:hover {
-      color: var(--blue-color);
-    }
   }
+
   &__box {
     display: block;
     @media screen and (min-width: 1200px) {
@@ -187,7 +185,10 @@
     justify-content: space-between;
   }
 }
-
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--blue-color);
+}
 .footer__address-item {
   > .footer__link {
     color: var(--footer-text-colors);

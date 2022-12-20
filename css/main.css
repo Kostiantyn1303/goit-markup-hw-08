@@ -952,9 +952,6 @@ button {
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
-.footer__link:hover {
-  color: var(--blue-color);
-}
 .footer__box {
   display: block;
 }
@@ -1138,6 +1135,11 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--blue-color);
 }
 
 .footer__address-item > .footer__link {
