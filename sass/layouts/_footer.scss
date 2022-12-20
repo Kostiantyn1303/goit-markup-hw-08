@@ -185,10 +185,7 @@
     justify-content: space-between;
   }
 }
-.footer__link:hover,
-.footer__link:focus {
-  color: var(--blue-color);
-}
+
 .footer__address-item {
   > .footer__link {
     color: var(--footer-text-colors);
@@ -197,5 +194,11 @@
   > .footer__link {
     color: var(--footer-text-colors);
     text-decoration-line: none;
+  }
+  > .footer__link:hover {
+    color: var(--blue-color);
+  }
+  > .footer__link:focus {
+    color: var(--blue-color);
   }
 }

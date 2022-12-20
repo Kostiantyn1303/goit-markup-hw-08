@@ -1137,11 +1137,6 @@ button {
   }
 }
 
-.footer__link:hover,
-.footer__link:focus {
-  color: var(--blue-color);
-}
-
 .footer__address-item > .footer__link {
   color: var(--footer-text-colors);
   text-decoration: none;
@@ -1150,6 +1145,12 @@ button {
   color: var(--footer-text-colors);
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+}
+.footer__address-item > .footer__link:hover {
+  color: var(--blue-color);
+}
+.footer__address-item > .footer__link:focus {
+  color: var(--blue-color);
 }
 
 .portfolio {
